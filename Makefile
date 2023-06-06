@@ -3,13 +3,13 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	# Pylint your code
+	flake8 *.py
 
 format:
-	# format
+	black *.py
 
 test:
-	# test
+	pytest src/logic.py
 
 build:
 	# build
